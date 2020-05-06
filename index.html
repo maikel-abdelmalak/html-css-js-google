@@ -7,8 +7,8 @@
         <script src="https://kit.fontawesome.com/af17121d24.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <div class="header header-lef">
+        <header class="clearfix">
+            <div class="float header-lef">
                 <ul>
                     <li>
                         <a href="#">Chi siamo</a>
@@ -18,7 +18,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="header header-right">
+            <div class="float header-right right">
                 <ul>
                     <li>
                         <a href="#">Gmail</a>
@@ -39,16 +39,52 @@
         <main>
             <div class="">
                 <div class="titolo">
-                    <h1>GOOGLE</h1>
-                    <input type="search" name="" value="">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="GOOGLE">
+                    </div>
+                    <div class="search">
+                        <div class="flex">
+                            <i class="fas fa-search"></i>
+                            <input type="search" name="" value="">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z" fill="#4285f4"></path><path d="m11 18.08h2v3.92h-2z" fill="#34a853"></path><path d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z" fill="#f4b400"></path><path d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z" fill="#ea4335"></path></svg>
+                        </div>
+                    </div>
                 </div>
-                <button type="button" name="button">Cerca con Google</button>
-                <button type="button" name="button">Mi sento fortunato</button>
-            </div>
-            <div class="privacy">
-
+                <button class="cerca" type="button" name="button">Cerca con Google</button>
+                <button class="cerca"  type="button" name="button">Mi sento fortunato</button>
             </div>
         </main>
+
+        <footer>
+            <div class="privacy clearfix">
+                <div class="float">
+                    <i class="fas fa-user-secret"></i>
+                    <p>Promemoria sulla privacy di Google</p>
+                </div>
+                <div class="float right">
+                    <button type="button" name="button">ricordamelo più tardi</button>
+                    <button type="button" name="button">leggi ora</button>
+                </div>
+            </div>
+            <div class="clearfix footer-top">
+                <div class="float paese">
+                    <p>Italia</p>
+                </div>
+            </div>
+            <div class="clearfix footer-bottom">
+                <div class="float footer-bottom-left">
+                    <a href="#">Pubblicità</a>
+                    <a href="#">Soluzioni aziendali</a>
+                    <a href="#">Come funziona la ricerca</a>
+                </div>
+                <div class="float footer-bottom-right right">
+                    <a href="#">Privacy</a>
+                    <a href="#">Termini</a>
+                    <a href="#">Impostazioni</a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="main.js" charset="utf-8"></script>
     </body>
 </html>

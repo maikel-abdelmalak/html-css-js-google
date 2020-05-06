@@ -4,37 +4,169 @@
     box-sizing: border-box;
 }
 
-
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 a{
     text-decoration: none;
-    color: #ddd;
+    color: #777;
+    padding: 10px;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 ul li{
     display: inline-block;
-    padding: 10px;
+
 }
 
+button{
+    cursor: pointer;
+    border:none;
+    border-radius: 5px;
+}
 
-.header{
+button:focus{
+    outline: none;
+}
+
+.float{
     float: left;
     width: 50%;
     padding: 10px;
 }
 
-.header-left{
-    text-align: left;
-}
-
-.header-right{
+.right{
     text-align: right;
 }
 
+header{
+    padding-top: 15px;
+}
+
+header button{
+    padding: 8px 15px;
+    color: #fff;
+    background-color: #4285f4;
+    border-radius: 8px;
+    font-weight: bold;
+}
 main{
     width: 100%;
-    height: 50vh;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.search{
+    margin-top: 20px;
+    border-radius: 31px;
+    border: 1px solid #ddd;
+    height: 45px;
+    width: 500px;
+    display: inline-block;
+}
+
+.search:hover{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+.flex{
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
+}
+
+.flex input{
+    border: none;
+    height: 100%;
+    width: 400px;
+    font-size: 23px;
+}
+
+.flex input:focus{
+    outline: none;
+}
+
+.flex i{
+    font-size: 15px;
+    color: #777;
+}
+
+.flex svg{
+    height: 26px;
+    width: 26px;
+}
+
+.cerca{
+    margin: 15px 5px;
+    padding: 10px 25px;
+    color: #777;
+}
+
+.cerca:hover{
+    border: 1px solid #ddd;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    background-color: #f2f2f2
+}
+
+.privacy{
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: none;
+}
+
+.privacy i{
+    margin-right: 15px;
+    color:#4285f4;
+    font-size: 40px;
+    vertical-align: middle;
+}
+.privacy p{
+    display: inline-block;
+    font-size: 25px;
+}
+
+.privacy button{
+    padding: 15px 25px;
+    text-transform: uppercase;
+}
+
+.privacy button:first-child{
+    color: #4285f4;
+    background-color: #fff;
+}
+.privacy button:first-child:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+.privacy button:last-child{
+    background-color: #4285f4;
+    color: #fff;
+}
+
+.privacy button:last-child:hover{
+    border:  1px solid #4299f4;
+}
+
+.footer-top{
+    border-bottom: 1px solid #ddd;
+    padding-left: 10px;
+    color:#777;
+}
+.paese{
+    text-align: left;
 }
