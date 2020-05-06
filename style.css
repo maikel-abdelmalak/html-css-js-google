@@ -48,6 +48,10 @@ header{
     padding-top: 15px;
 }
 
+header li{
+    position: relative;
+}
+
 header button{
     padding: 8px 15px;
     color: #fff;
@@ -55,6 +59,59 @@ header button{
     border-radius: 8px;
     font-weight: bold;
 }
+
+.header-right ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+#grill{
+    font-size: 22px;
+    width: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#grill:hover{
+    background-color: #ddd;
+}
+
+.dropdown{
+    position: absolute;
+    top: 40px;
+    left: -180px;
+    width: 302px;
+    display: flex;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.dropdown-element{
+    display: inline-block;
+    text-align: center;
+    padding:10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.dropdown-element:hover{
+    background-color: #ddd;
+}
+.element-img{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+
+.element-img img{
+    width: 80%;
+    height: 80%;
+}
+
 main{
     width: 100%;
     padding-top: 150px;
@@ -66,7 +123,7 @@ main{
     border-radius: 31px;
     border: 1px solid #ddd;
     height: 45px;
-    width: 500px;
+    width: 600px;
     display: inline-block;
 }
 
@@ -85,8 +142,9 @@ main{
 .flex input{
     border: none;
     height: 100%;
-    width: 400px;
     font-size: 23px;
+    flex-grow: 2;
+    padding: 0 10px;
 }
 
 .flex input:focus{
