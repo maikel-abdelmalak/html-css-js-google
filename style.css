@@ -67,18 +67,24 @@ header button{
     padding-right: 10px;
 }
 
-#grill{
+.grill{
     font-size: 22px;
     width: 48px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-#grill:hover{
+.grill:hover{
     background-color: #ddd;
 }
 
-.dropdown{
+.hidden{
+    display: none;
+}
+
+.dropdown-flex-container{
+    z-index: 2;
+    background-color: #fff;
     position: absolute;
     top: 40px;
     left: -180px;
