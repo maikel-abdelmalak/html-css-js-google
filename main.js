@@ -18,17 +18,13 @@ $(document).ready(function(){
         }
     });
 
-//     $(document).click(function(event){
-//             var target = $(event.target);
-//             if(target.hasClass('grill')){
-//                 if($("#dropdown").hasClass("hidden")){
-//                     $('#dropdown').removeClass('hidden');
-//                 }else{
-//                     $('#dropdown').addClass('hidden');
-//                 }
-//             }else{
-//                 $('#dropdown').addClass('hidden');
-//             }
-//
-//     });
+    $(document).click(function(event){
+            var target = $(event.target);
+            console.log(target);
+            if(!target.hasClass('tar') && !$("#dropdown").hasClass("hidden")){
+                $('#dropdown').addClass('hidden');
+            }
+    });
+
+
 });
